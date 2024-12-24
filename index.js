@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 
-const io = new Server(8080, {
+const io = new Server(8081, {
   cors: {
     origin: "*",
     methods: ["GET", "POST"],
@@ -60,7 +60,7 @@ app.use("/api/student", student);
 app.use("/api/admin", admin);
 app.use("/api/auth", auth);
 
-app.listen(8080, () => {
+app.listen(8081, () => {
   console.log(`Server is running on port 8080`);
   connectdb();
 });
