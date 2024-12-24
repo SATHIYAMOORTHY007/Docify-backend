@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 
-const io = new Server(4444, {
+const io = new Server(8080, {
   cors: {
     origin: "*",
     methods: ["GET", "POST"],
