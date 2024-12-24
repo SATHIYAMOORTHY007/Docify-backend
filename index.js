@@ -19,7 +19,7 @@ app.use(express.json());
 
 const io = new Server(4444, {
   cors: {
-    origin: "http://localhost:3001",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
